@@ -1,0 +1,71 @@
+@import "mixin";
+.page-footer {
+  background-color: #ffd200;
+}
+.page-footer__container {
+  @include container;
+}
+.page-footer__wrapper {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 220px;
+}
+.footer-nav,
+.social__list {
+  display: flex;
+  justify-content: center;
+}
+.footer-nav__info-list,
+.footer-nav__block-info-list,
+.footer-nav__solutions-list,
+.social__list {
+  margin: 0;
+  margin-right: 80px;
+  padding: 0;
+  padding-top: 30px;
+  width: 160px;
+  border-top: 2px solid #000;
+  list-style: none;
+}
+.footer-nav__solutions-list {
+  margin-right: 0;
+}
+.footer-nav__info-item,
+.footer-nav__block-info-item,
+.footer-nav__solutions-item,
+.social__item {
+  margin-bottom: 15px;
+  a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-bottom: 1px solid #000;
+    }
+  }
+}
+.social__list {
+  margin-right: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.social__item {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  background: url("../img/sprites.png") no-repeat;
+  &--fb {
+    background-position: -509px -35px;
+  }
+  &--vk {
+    margin: 0 20px;
+    background-position: -433px -34px;
+  }
+  &--inst {
+    background-position: -473px -35px;
+  }
+}

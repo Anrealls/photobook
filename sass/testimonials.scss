@@ -1,0 +1,86 @@
+@import "mixin";
+.testimonials__container {
+  @include container;
+}
+
+.testimonials {
+  margin-bottom: 100px;
+  width: 100%;
+  background: #f7f0e6 url("../img/banner2.png") no-repeat 50%;
+
+}
+
+.testimonials__wrapper {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  background-size: cover;
+}
+.testimonials__title {
+  margin: 45px 0;
+  font-size: 60px;
+  font-weight: 400;
+}
+.testimonials__user-wrapper {
+  display: flex;
+  margin-bottom: 25px;
+}
+.testimonials__user-info {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials__user-name {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.testimonials__user-work {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.testimonials__user-text {
+  margin: 0;
+  width: 550px;
+  font-size: 18px;
+  font-weight: 400;
+  &--first {
+    margin-bottom: 10px;
+  }
+  &--second {
+    margin-bottom: 50px;
+  }
+}
+.testimonials__btn-next {
+  position: relative;
+  display: block;
+  margin-left: 350px;
+  margin-bottom: 60px;
+  font-size: 16px;
+  background-color: transparent;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -35px;
+    width: 26px;
+    height: 3px;
+    background: url("../img/sprites.png") no-repeat -18px -110px;
+  }
+}
+.testimonials__btn {
+  margin-left: 60px;
+  margin-bottom: 60px;
+  padding: 20px 30px;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}

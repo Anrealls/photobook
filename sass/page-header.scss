@@ -1,0 +1,32 @@
+@import "mixin";
+
+.page-header {
+  @include container;
+}
+.page-header__container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+}
+.user-info__number-phone {
+  padding: 6px 35px 14px 35px;
+  background-color: #ffd200;
+  box-sizing: border-box;
+  border-radius: 12px;
+  span {
+    border-bottom: 2px dotted #000;
+    font-size: 16px;
+  }
+
+}
+.user-info-login {
+  margin-left: 60px;
+  width: 33px;
+  height: 29px;
+  background: url("../img/sprites.png") no-repeat -70px -96px;
+}

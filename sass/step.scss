@@ -1,0 +1,39 @@
+
+
+.step__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 0;
+  list-style: none;
+}
+.step__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 130px;
+  text-align: center;
+  p {
+    margin: 0;
+    margin-top: 25px;
+    font-size: 20px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 139px;
+    width: 135px;
+    height: 5px;
+    background: url("../img/55.png") no-repeat;
+  }
+}
+.step__item:nth-last-child(1) {
+  margin-right: 0;
+  &::after {
+    display: none;
+  }
+}
