@@ -17,7 +17,8 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1200px; }
+  width: 1200px;
+  padding: 0 20px; }
 
 .page-header__container {
   padding: 20px 0;
